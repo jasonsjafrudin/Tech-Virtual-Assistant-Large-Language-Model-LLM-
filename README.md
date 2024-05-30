@@ -1,15 +1,13 @@
 # Tech-Virtual-Assistant-Large-Language-Model
 Engineered Large Language Model and Web Application for streamlining Market Research in Tech Industry. The goal is to address the increasing difficulties of keeping pace with rapid changes in market conditions and consumer preferences in the tech industry by leveraging advanced machine learning techniques to build and deploy a LLM and application that transforms the quality and timeliness of conducting market research in this dynamic sector.
 
-Data Extraction and Preprocessing:
-
+## Data Extraction and Preprocessing:
 <img width="403" alt="image" src="https://github.com/jasonsjafrudin/Tech-Virtual-Assistant-Large-Language-Model-LLM-/assets/61297201/8bfd8f7f-3798-4fbe-8b2e-ab0acb2dfb1d">
 
 Original data is collected from RSS News Feed in json files written in HTML format. Each json file represents an unique article, and the json file also contains the original url, date of publication, author information, and html content of the article. We have filtered data specific to tech related articles (around 2.1 Gb in size). Utilized beautifulsoup package to transform data into a human-readable text from the HTML text, extracting pertinent information such as article titles, authors, publication dates, and content. I also defined a cleaning function to deal with the dirty news article texts; eliminating newlines, tabs, remnants of web crawls, and other irrelevant text with the help of regex module. 
 
 
-Methodology Approaches:
-
+## Methodology Approaches:
 <img width="534" alt="image" src="https://github.com/jasonsjafrudin/Tech-Virtual-Assistant-Large-Language-Model-LLM-/assets/61297201/bbde32ca-8903-4df3-adea-aaa6ba38b694">
 
 LLM for text summarization- Unsupervised approach. Fine-tuned open source BART LLM for text summarization using my proprietary tech news articles dataset (unlabeled). This initial training phase will involve tokenizing and feeding our dataset into the model architecture, allowing it to learn the intricacies, nuances, and concepts within tech related articles through self-supervised learning objectives. I will also fine-tune the model through adjusting various hyperparameters and optimizing the model's parameters to ensure efficient understanding and performance specifically to our unique requirements and objectives. 
